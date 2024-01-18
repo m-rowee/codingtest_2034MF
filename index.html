@@ -4,10 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>MFCodingTest</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+
+      input, button {
+        font-size: 16px;
+        margin: 5px;
+      }
+
+      #result {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <h1>時刻範囲チェッカー</h1>
+
+    <label for="targetTime">対象時刻 (0-23): </label>
+    <input type="number" id="targetTime" min="0" max="23">時
+
+    <br>
+
+    <label for="startTime">開始時刻: </label>
+    <input type="number" id="startTime" min="0" max="23">時
+
+    <br>
+
+    <label for="endTime">終了時刻: </label>
+    <input type="number" id="endTime" min="0" max="23">時
+
+    <br>
+
+    <button id="checkButton">チェック</button>
+
+    <div id="result"></div>
+    <script type="module" src="/main.js">
+
+    </script>
   </body>
 </html>
